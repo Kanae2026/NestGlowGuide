@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome Guide - Nest Glow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">Nest Glow</div>
+
+        <div class="lang-selector">
+
+            <button onclick="switchLanguage('ja')" id="btn-ja" class="active">JP</button>
+
+            <button onclick="switchLanguage('en')" id="btn-en">EN</button>
+
+            <button onclick="switchLanguage('zh')" id="btn-zh">CN</button>
+
+            <button onclick="switchLanguage('ko')" id="btn-ko">KR</button>
+
+        </div>
+
+    </header>
+
+ 
+
+    <main>
+
+        <nav class="tab-menu">
+
+                <button class="tab-btn active" onclick="openTab('wifi', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.94 0M12 20h.01"/></svg>
+
+                    <span data-i18n="nav_wifi">部屋情報 / Wi-Fi</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('checkin', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+
+                    <span data-i18n="nav_checkin">チェックイン</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('checkout', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+
+                    <span data-i18n="nav_checkout">チェックアウト</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('rules', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+
+                    <span data-i18n="nav_rules">ハウスルール</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('trash', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+
+                    <span data-i18n="nav_trash">ごみについて</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('amenities', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+
+                    <span data-i18n="nav_amenities">設備利用方法</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('amenities_list', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+
+                    <span data-i18n="nav_amenities_list">アメニティ・設備</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('access', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+
+                    <span data-i18n="nav_access">アクセス</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('around', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+
+                    <span data-i18n="nav_around">周辺案内</span>
+
+                </button>
+
+                <button class="tab-btn" onclick="openTab('policy', event)">
+
+                    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+
+                    <span data-i18n="nav_policy">ポリシー</span>
+
+                </button>
+
+            </nav>
+
+ 
+
+        <!-- アクセス -->
+
+        <section id="access" class="tab-content">
+
+            <h2 data-i18n="access_title">アクセス</h2>
+
+            <div class="card">
+
+                <a href=https://maps.app.goo.gl/2YXw4twUrpH1cDzF9 target="_blank" class="map-link-btn" data-i18n="google_map_btn">Google マップで開く</a>
+
+                <div class="map-container">
+
+                    <iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.998426363935!2d130.4267965!3d33.605345299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191d5f82a25dd%3A0xa535ac7dd5712854!2z44Kw44Op44OH44Kj44O844OI5ZCJ5aGa6aeF5p2x!5e0!3m2!1sja!2sjp!4v1781992920739!5m2!1sja!2sjp allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h3 data-i18n="route_guide_h">駅からの詳細ルート案内（徒歩5分）</h3>
+
+                <div class="step-list">
+
+                    <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="rg_s1"></p><div class="step-img-box"><img src="img/route-01.jpg" alt="Route 1" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="rg_s2"></p><div class="step-img-box"><img src="img/route-02.jpg" alt="Route 2" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="rg_s3"></p><div class="step-img-box"><img src="img/route-03.jpg" alt="Route 3" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="rg_s4"></p><div class="step-img-box"><img src="img/route-04.jpg" alt="Route 4" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="rg_s5"></p><div class="step-img-box"><img src="img/route-05.jpg" alt="Route 5" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">6</div><div class="step-body"><p data-i18n="rg_s6"></p><div class="step-img-box"><img src="img/route-06.jpg" alt="Route 6" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">7</div><div class="step-body"><p data-i18n="rg_s7"></p><div class="step-img-box"><img src="img/route-07.jpg" alt="Route 7" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">8</div><div class="step-body"><p data-i18n="rg_s8"></p><div class="step-img-box"><img src="img/route-08.jpg" alt="Route 8" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">9</div><div class="step-body"><p data-i18n="rg_s9"></p><div class="step-img-box"><img src="img/route-09.jpg" alt="Route 9" loading="lazy"></div></div></div>
+
+                    <div class="step-item"><div class="step-num">10</div><div class="step-body"><p data-i18n="rg_s10"></p><div class="step-img-box"><img src="img/route-10.jpg" alt="Route 10" loading="lazy"></div></div></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+ 
+
+        <!-- チェックイン -->
+
+         <!-- チェックイン -->
+
+        <section id="checkin" class="tab-content">
+
+            <h2 data-i18n="ci_title">チェックイン手順</h2>
+
+            <div class="card">
+
+                <div class="badge checkin-badge" data-i18n="ci_badge">CHECK-IN | 16:00 ~</div>
+
+                <div class="step-list">
+
+                    <div class="step-item">
+
+                        <div class="step-num">STEP 1</div>
+
+                        <div class="step-body">
+
+                            <h4 data-i18n="ci_step1_title">前日までに宿泊者名簿の提出</h4>
+
+                            <p data-i18n="ci_step1_desc"></p>
+
+                            <a href="https://forms.gle/2nvwiJeXFNu8NHgn8" class="inline-link" data-i18n="ci_link_text">宿泊者名簿の提出はこちら</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="step-item">
+
+                        <div class="step-num">STEP 2</div>
+
+                        <div class="step-body">
+
+                            <h4 data-i18n="ci_step2_title">アクセス（お部屋までのご案内）</h4>
+
+                            <p data-i18n="ci_step2_desc"></p>
+
+                            <a href="#" class="inline-link" onclick="openTab('access', event)" data-i18n="ci_access_link">駅からのルート案内はこちら</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="final-notice" data-i18n="ci_keybox_notice">※キーボックスの暗証番号は、宿泊者名簿ご回答後にご案内いたします。</p>
+
+            </div>
+
+        </section>
+
+ 
+
+ 
+
+        <!-- 部屋情報 / Wi-Fi -->
+
+        <section id="wifi" class="tab-content active">
+
+            <h2 data-i18n="wifi_title">部屋情報 & Wi-Fi</h2>
+
+            <div class="card">
+
+                <h3 data-i18n="room_specs_title">物件情報</h3>
+
+                <table>
+
+                    <tr><th data-i18n="room_name_label">お部屋</th><td data-i18n="room_name_value"></td></tr>
+
+                    <tr><th data-i18n="room_addr_label">住所</th><td data-i18n="room_addr_value"></td></tr>
+
+                </table>
+
+                <h3 data-i18n="wifi_info_title">Wi-Fi 情報</h3>
+
+                <p data-i18n="wifi_desc"></p>
+
+                <table>
+
+                    <tr><th>SSID</th><td><code>TP-Link_3A10</code></td></tr>
+
+                    <tr><th data-i18n="wifi_security_label">暗号化方式</th><td>WPA/WPA2</td></tr>
+
+                    <tr><th>Password</th>
+
+                        <td class="wifi-password-cell">
+
+                            <code>10370896</code>
+
+                            <button onclick="copyPassword('10370896', this)" class="copy-btn">
+
+                                <svg class="copy-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+
+                                <span class="copy-text" data-i18n="copy_text">コピー</span>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+                <h4 data-i18n="trouble_title"></h4>
+
+                <p data-i18n="trouble_desc"></p>
+
+            </div>
+
+        </section>
+
+ 
+
+        <!-- 設備利用方法 -->
+
+        <section id="amenities" class="tab-content">
+
+            <h2 data-i18n="amenities_title">設備利用方法</h2>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_rice"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="rice_h1"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="rice_m1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="rice_m2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="rice_m3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="rice_m4"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="rice_m5"></p></div></div>
+
+                    </div>
+
+                    <div class="step-img-box"><img src="img/device-ricecooker.jpg" alt="Rice Cooker" loading="lazy"></div>
+
+                    <h4 class="sub-heading" data-i18n="rice_h2"></h4>
+
+                    <p class="info-note" data-i18n="rice_m6"></p>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_ih"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="ih_h1"></h4><p class="info-note" data-i18n="ih_note1"></p>
+
+                    <h4 class="sub-heading" data-i18n="ih_h2"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="ih_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="ih_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="ih_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="ih_s4"></p></div></div>
+
+                    </div>
+
+                    <h4 class="sub-heading" data-i18n="ih_h3"></h4><p class="info-note" data-i18n="ih_note2"></p>
+
+                    <div class="step-img-box"><img src="img/device-ih.jpg" alt="IH" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_micro"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="micro_h1"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="micro_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="micro_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="micro_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="micro_s4"></p></div></div>
+
+                    </div>
+
+                    <h4 class="sub-heading" data-i18n="micro_h2"></h4><p class="info-note" data-i18n="micro_note1"></p>
+
+                    <p class="alert-text" data-i18n="micro_warn"></p>
+
+                    <div class="step-img-box"><img src="img/device-microwave.jpg" alt="Microwave" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_kettle"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="ket_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="ket_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="ket_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="ket_s4"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="ket_s5"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="ket_warn"></p>
+
+                    <div class="step-img-box"><img src="img/device-kettle.jpg" alt="Kettle" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_ac"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p class="info-note" data-i18n="ac_main_desc"></p>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">運転</div><div class="step-body"><p data-i18n="ac_mode_desc"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">停止</div><div class="step-body"><p data-i18n="ac_stop_desc"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">送風</div><div class="step-body"><p data-i18n="ac_fan_desc"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">温度</div><div class="step-body"><p data-i18n="ac_temp_desc"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">風量</div><div class="step-body"><p data-i18n="ac_speed_desc"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">風向</div><div class="step-body"><p data-i18n="ac_dir_desc"></p></div></div>
+
+                    </div>
+
+                    <p class="info-note" data-i18n="ac_note_gradito"></p>
+
+                    <div class="step-img-box"><img src="img/device-aircon.jpg" alt="AC" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_intercom"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">対応</div><div class="step-body"><p data-i18n="int_guest"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">終了</div><div class="step-body"><p data-i18n="int_end"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">解錠</div><div class="step-body"><p data-i18n="int_unlock"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="int_emergency"></p>
+
+                    <div class="step-img-box"><img src="img/device-intercom.jpg" alt="Intercom" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_living_water"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="lw_h1"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="lw_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="lw_s2"></p></div></div>
+
+                    </div>
+
+                    <h4 class="sub-heading" data-i18n="lw_h2"></h4><p class="info-note" data-i18n="lw_auto_desc"></p>
+
+                    <div class="step-img-box"><img src="img/device-water-living.jpg" alt="Living Water Heater" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_bath_water"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p class="info-note" data-i18n="bw_desc"></p>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">基本</div><div class="step-body"><p data-i18n="bw_base"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">自動</div><div class="step-body"><p data-i18n="bw_auto"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">追焚</div><div class="step-body"><p data-i18n="bw_reheat"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">加水</div><div class="step-body"><p data-i18n="bw_add"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">呼出</div><div class="step-body"><p data-i18n="bw_call"></p></div></div>
+
+                    </div>
+
+                    <div class="step-img-box"><img src="img/device-water-bath.jpg" alt="Bathroom Water Heater" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_shower"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p class="info-note" data-i18n="sh_desc"></p>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">吐水</div><div class="step-body"><p data-i18n="sh_handle_r"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">温度</div><div class="step-body"><p data-i18n="sh_handle_l"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="sh_warn_text"></p>
+
+                    <div class="step-img-box"><img src="img/device-shower.jpg" alt="Shower" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_toilet"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p class="info-note" data-i18n="toilet_desc"></p>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">洗浄</div><div class="step-body"><p data-i18n="t_wash"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">停止</div><div class="step-body"><p data-i18n="t_stop"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">水圧</div><div class="step-body"><p data-i18n="t_pressure"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">温度</div><div class="step-body"><p data-i18n="t_temp"></p></div></div>
+
+                    </div>
+
+                    <div class="step-img-box"><img src="img/device-toilet.jpg" alt="Toilet" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_light"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">全灯/消灯</div><div class="step-body"><p data-i18n="light_on_off"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">明るさ</div><div class="step-body"><p data-i18n="light_bright"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">色味</div><div class="step-body"><p data-i18n="light_color"></p></div></div>
+
+                    </div>
+
+                    <div class="step-img-box"><img src="img/device-light.jpg" alt="Light Remote" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_wash"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="wash_g1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="wash_g2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="wash_g3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="wash_g4"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="wash_g5"></p></div></div>
+
+                    </div>
+
+                    <div class="step-img-box"><img src="img/device-washer.jpg" alt="Washer" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_mirror"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="mirror_h1"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="mirror_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="mirror_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="mirror_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="mirror_s4"></p></div></div>
+
+                    </div>
+
+                    <h4 class="sub-heading" data-i18n="mirror_h2"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">①</div><div class="step-body"><p data-i18n="mirror_c1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">②</div><div class="step-body"><p data-i18n="mirror_c2"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="mirror_warn"></p>
+
+                    <div class="step-img-box"><img src="img/device-mirror.jpg" alt="Tabletop Mirror" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_dryer"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="dryer_h1"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="dryer_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="dryer_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="dryer_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="dryer_s4"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="dryer_s5"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="dryer_warn"></p>
+
+                    <div class="step-img-box"><img src="img/device-dryer.jpg" alt="Hair Dryer" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_hairiron"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <h4 class="sub-heading" data-i18n="hairiron_h1"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="hairiron_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="hairiron_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="hairiron_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="hairiron_s4"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="hairiron_s5"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="hairiron_warn"></p>
+
+                    <div class="step-img-box"><img src="img/device-hairiron.jpg" alt="Curling Iron" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="dev_tv"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">視聴</div><div class="step-body"><p data-i18n="tv_watch"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">入力</div><div class="step-body"><p data-i18n="tv_input"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">配信</div><div class="step-body"><p data-i18n="tv_stream"></p></div></div>
+
+                    </div>
+
+                    <p class="alert-text" data-i18n="tv_warn"></p>
+
+                    <div class="step-img-box"><img src="img/device-tv.jpg" alt="TV Remote" loading="lazy"></div>
+
+                </div>
+
+            </details>
+
+        </section>
+
+ 
+
+        <!-- アメニティ・設備一覧 -->
+
+        <section id="amenities_list" class="tab-content">
+
+            <h2 data-i18n="tl_title">アメニティ・設備一覧</h2>
+
+            <div class="card">
+
+                <p class="alert-text" data-i18n="tl_notice_towel"></p>
+
+                <p class="alert-text" data-i18n="tl_notice_hanger"></p>
+
+            </div>
+
+            <div class="amenity-grid">
+
+                <div class="amenity-item onsite"><span data-i18n="item_shampoo"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_conditioner"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_bodywash"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_handsoap"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_alcohol"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_facewash"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_toner"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_razor"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_hairtie"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_dryer"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_cottonswab"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_bathtowel"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_facetowel"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_spare_towel"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_hanger"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_pajamas"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_toothbrush"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_futon"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_pillow"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_sheets"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_slippers"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_toiletpaper"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_tissue"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_dishsoap"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_sponge"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_coffee"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_tea"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_water"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_gas_stove"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_ih"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_electric_stove"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_microwave"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_toaster"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_rice_cooker"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_kettle"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_mini_fridge"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_fridge"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_washing_machine"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_detergent"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_softener"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_dryer_machine"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_bathroom_dryer"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_ac"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_fan_heater"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_gas_heater"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_floor_heating"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_air_purifier"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_tv"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_washlet"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_iron"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_chopsticks"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_spoon"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_fork"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_small_plate"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_large_plate"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_bowl"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_pan"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_spatula"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_pot"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_ladle"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_cooking_chopsticks"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_knife"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_board"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_peeler"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_scissors"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_glass"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_mug"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_wine_glass"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_opener"></span></div>
+
+                <div class="amenity-item onsite"><span data-i18n="item_wrap"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_foil"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_seasoning"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_vacuum"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_cleaning_tools"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_bath_cleaning"></span></div>
+
+                <div class="amenity-item offsite"><span data-i18n="item_toilet_cleaning"></span></div>
+
+            </div>
+
+        </section>
+
+ 
+
+        <!-- ごみ -->
+
+        <section id="trash" class="tab-content">
+
+            <h2 data-i18n="trash_title">ごみについて</h2>
+
+            <div class="card">
+
+                <h3 data-i18n="trash_rule_h"></h3>
+
+                <p data-i18n="trash_main_rule"></p>
+
+                <div class="trash-types-box">
+
+                    <h4 data-i18n="fukuoka_trash_h"></h4>
+
+                    <p data-i18n="fukuoka_trash_body"></p>
+
+                </div>
+
+                <div class="trash-box-info">
+
+                    <h4 data-i18n="stay_5_7_h"></h4><p data-i18n="stay_5_7_body"></p>
+
+                    <h4 data-i18n="stay_1w_h"></h4><p data-i18n="stay_1w_body"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+ 
+
+        <!-- ハウスルール -->
+
+        <section id="rules" class="tab-content">
+
+            <h2 data-i18n="rules_title">ハウスルール</h2>
+
+            <div class="card">
+
+                <h3 data-i18n="rules_desc_header"></h3>
+
+                <ul class="manual-rules-list">
+
+                    <li data-i18n="mr1"></li><li data-i18n="mr2"></li><li data-i18n="mr3"></li><li data-i18n="mr4"></li>
+
+                    <li data-i18n="mr5"></li><li data-i18n="mr6"></li><li data-i18n="mr7"></li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3 data-i18n="luggage_title"></h3>
+
+                <p class="alert-text" data-i18n="luggage_desc_ci"></p>
+
+                <p class="alert-text" data-i18n="luggage_desc_co"></p>
+
+            </div>
+
+            <div class="card penalty-card">
+
+                <h3 data-i18n="penalty_title"></h3>
+
+                <ul class="penalty-list">
+
+                    <li data-i18n="p1"></li><li data-i18n="p4"></li><li data-i18n="p5"></li><li data-i18n="p6"></li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+ 
+
+        <!-- ポリシー -->
+
+        <section id="policy" class="tab-content">
+
+            <h2 data-i18n="policy_title">ポリシー</h2>
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="p_cxl_title"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p data-i18n="p_cxl_intro"></p>
+
+                    <ul class="manual-rules-list">
+
+                        <li data-i18n="p_cxl_item1"></li>
+
+                        <p class="info-note" data-i18n="p_cxl_note1"></p>
+
+                        <li data-i18n="p_cxl_item2"></li>
+
+                        <p class="info-note" data-i18n="p_cxl_note2"></p>
+
+                        <li data-i18n="p_cxl_item3"></li>
+
+                        <p class="info-note" data-i18n="p_cxl_note3"></p>
+
+                    </ul>
+
+                    <h4 class="sub-heading" data-i18n="p_cxl_ex_h"></h4>
+
+                    <p data-i18n="p_cxl_ex1"></p>
+
+                    <p data-i18n="p_cxl_ex2"></p>
+
+                    <h4 class="sub-heading" data-i18n="p_cxl_ref_h"></h4>
+
+                    <p data-i18n="p_cxl_ref_body"></p>
+
+                </div>
+
+            </details>
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="p_ci_title"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p data-i18n="p_ci_intro"></p>
+
+                    <ul class="manual-rules-list">
+
+                        <li data-i18n="p_ci_item1"></li>
+
+                        <li data-i18n="p_ci_item2"></li>
+
+                        <li data-i18n="p_ci_item3"></li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="p_key_title"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="p_key_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="p_key_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="p_key_s3"></p></div></div>
+
+                    </div>
+
+                    <p class="info-note" data-i18n="p_key_note"></p>
+
+                </div>
+
+            </details>
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="p_smoke_title"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p class="alert-text" data-i18n="p_smoke_body"></p>
+
+                </div>
+
+            </details>
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="p_co_title"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <p data-i18n="p_co_item1"></p>
+
+                    <h4 class="sub-heading" data-i18n="p_co_list_h"></h4>
+
+                    <div class="step-list compact">
+
+                        <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="p_co_s1"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="p_co_s2"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="p_co_s3"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="p_co_s4"></p></div></div>
+
+                        <div class="step-item"><div class="step-num">5</div><div class="step-body"><p data-i18n="p_co_s5"></p></div></div>
+
+                    </div>
+
+                    <p class="info-note" data-i18n="p_co_note"></p>
+
+                </div>
+
+            </details>
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="p_lost_title"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <ul class="manual-rules-list">
+
+                        <li data-i18n="p_lost_item1"></li>
+
+                        <p class="info-note" data-i18n="p_lost_note1"></p>
+
+                        <li data-i18n="p_lost_item2"></li>
+
+                        <li data-i18n="p_lost_item3"></li>
+
+                        <li data-i18n="p_lost_item4"></li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+        </section>
+
+ 
+
+        <!-- 周辺案内 -->
+
+        <section id="around" class="tab-content">
+
+            <h2 data-i18n="around_title">周辺案内</h2>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="cat_food"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_banshaku_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_banshaku_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_banshaku_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_banshaku_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/B7sReQjVA2ypCMAWA?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_renren_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_renren_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_renren_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_renren_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/6vHitdQg3uo6YyWd9?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_lee_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_lee_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_lee_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_lee_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/tPQJyDXk7ZsAdHsH8?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_hanabi_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_hanabi_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_hanabi_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_hanabi_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/A5N88YcYX9WTMvEG8?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_bataru_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_bataru_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_bataru_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_bataru_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/M2u61pSDTRAkVQMr7?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="cat_shop"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_ohga_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_ohga_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_ohga_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_ohga_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/xrSn7cYSGGtWKpUX8?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_direx_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_direx_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_direx_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_direx_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/2aZ6HN5Zbxksaf2C7?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_sunny_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_sunny_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_sunny_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_sunny_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/xBJwiXK4is2yL1GL7?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_mrmax_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_mrmax_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_mrmax_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_mrmax_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/tWHfnEnApv1AgkDd7?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_marushoku_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_marushoku_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_marushoku_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_marushoku_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/TEXd9yWyQP33RtA57?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="cat_convenience"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_lawson_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_lawson_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_lawson_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_lawson_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/vU9gvUoDVVMF78he8?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_ministop_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_ministop_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_ministop_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_ministop_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/5ftn8WM1FHLuj3f78?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="cat_laundry"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_washhouse_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_washhouse_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_washhouse_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_service"></h5><p data-i18n="sp_washhouse_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/YPGp4oLqP88ok6cQ6?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_laclass_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_laclass_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_laclass_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_service"></h5><p data-i18n="sp_laclass_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/3TG4MV12xvzdR5XCA?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="cat_parking"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_yoshizuka4_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_yoshizuka4_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_yoshizuka4_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_point"></h5><p data-i18n="sp_yoshizuka4_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/coitXj9h29qWfJq7T target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_dparking_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_dparking_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_dparking_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_point"></h5><p data-i18n="sp_dparking_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/oitXj9h29qWfJq7Tc target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                </div>
+
+            </details>
+
+ 
+
+            <details class="accordion-card">
+
+                <summary class="accordion-summary"><span data-i18n="cat_smoking"></span><span class="arrow"></span></summary>
+
+                <div class="accordion-content">
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_takenoya_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_takenoya_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_takenoya_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_takenoya_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/dEyQQhzSmjxnujtd9?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_uotami_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_uotami_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_uotami_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_point"></h5><p data-i18n="sp_uotami_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/AVyp9xqW9vWuXmoMA?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_teppano_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_teppano_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_teppano_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_teppano_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/wNjXQZHaQet4PvYSA?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                    <div class="spot-card">
+
+                        <h4 class="spot-title" data-i18n="sp_gonbei_t"></h4>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_review"></h5><p data-i18n="sp_gonbei_r"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_staff"></h5><p data-i18n="sp_gonbei_s"></p></div>
+
+                        <div class="spot-section"><h5 data-i18n="lbl_recommend"></h5><p data-i18n="sp_gonbei_m"></p></div>
+
+                        <a href=https://maps.app.goo.gl/7muY6366LdfD7J116?g_st=ic target="_blank" class="map-inline-link">🔗 Google Map</a>
+
+                    </div>
+
+                </div>
+
+            </details>
+
+        </section>
+
+ 
+
+        <!-- チェックアウト -->
+
+        <section id="checkout" class="tab-content">
+
+            <h2 data-i18n="co_title">チェックアウト手順</h2>
+
+            <div class="card">
+
+                <div class="badge checkout-badge" data-i18n="co_badge">CHECK-OUT | ~ 10:00</div>
+
+                <p class="alert-text" data-i18n="co_alert"></p>
+
+                <div class="step-list">
+
+                    <div class="step-item"><div class="step-num">1</div><div class="step-body"><p data-i18n="co_step1"></p></div></div>
+
+                    <div class="step-item"><div class="step-num">2</div><div class="step-body"><p data-i18n="co_step2"></p></div></div>
+
+                    <div class="step-item"><div class="step-num">3</div><div class="step-body"><p data-i18n="co_step3"></p></div></div>
+
+                    <div class="step-item"><div class="step-num">4</div><div class="step-body"><p data-i18n="co_step4"></p></div></div>
+
+                </div>
+
+                <p class="final-notice" data-i18n="co_final"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+ 
+
+    <script src="js/lang/ja.js"></script>
+
+    <script src="js/lang/en.js"></script>
+
+    <script src="js/lang/zh.js"></script>
+
+    <script src="js/lang/ko.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+
+ 
