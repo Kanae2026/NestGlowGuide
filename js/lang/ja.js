@@ -642,6 +642,106 @@ window.translations.ja = {
 
     p_lost_item4: "備品の破損・紛失： 破損や紛失が発覚した場合は実費相当額を請求いたします。ご出発前にメッセージにてお知らせください。",
 
+     // ▼ アメニティ一覧（カテゴリ見出し・ラベル）
+
+    al_title: "民泊アメニティ・設備一覧",
+
+    al_have: "ある", al_none: "ない",
+
+    al_cat_bed: "寝室・寝具", al_cat_bath: "バスルーム・アメニティ",
+
+    al_cat_kitchen: "キッチン・ダイニング", al_cat_laundry: "洗濯・ランドリー",
+
+    al_cat_living: "リビング・設備", al_cat_security: "安全・セキュリティ",
+
+    al_cat_other: "その他・サービス",
+
+ 
+
+    // 寝室・寝具
+
+    al_bed_h1: "寝具", al_bed_h2: "クローゼット", al_bed_h3: "ハンガー",
+
+    al_bed_n1: "パジャマ／浴衣", al_bed_n2: "お布団セット", al_bed_n3: "アイマスク・耳栓",
+
+ 
+
+    // バスルーム
+
+    al_bath_h1: "シャンプー類", al_bath_h2: "タオル", al_bath_h3: "バスマット",
+
+    al_bath_h4: "使い捨て歯ブラシ（1本/人）", al_bath_h5: "スリッパ（1足/人）", al_bath_h6: "ドライヤー",
+
+    al_bath_h7: "ヘアアイロン", al_bath_h8: "美顔ローラー", al_bath_h9: "入浴用イス",
+
+    al_bath_n1: "スキン・ヘアケア類", al_bath_n2: "剃刀・髭剃り", al_bath_n3: "綿棒",
+
+    al_bath_n4: "洗面器", al_bath_n5: "除菌シート", al_bath_n6: "浴室乾燥機", al_bath_n7: "入浴剤",
+
+ 
+
+    // キッチン
+
+    al_kit_h1: "冷蔵庫", al_kit_h2: "電子レンジ", al_kit_h3: "電気ケトル",
+
+    al_kit_h4: "IHコンロ", al_kit_h5: "炊飯器", al_kit_h6: "食器用洗剤",
+
+    al_kit_h7: "スポンジ", al_kit_h8: "食器・カトラリー", al_kit_h9: "調理器具", al_kit_h10: "水切りラック",
+
+    al_kit_n1: "サランラップ・アルミホイル", al_kit_n2: "調味料", al_kit_n3: "浄水器",
+
+    al_kit_n4: "コーヒー・ティーパック", al_kit_n5: "ペットボトルのお水", al_kit_n6: "トースター", al_kit_n7: "キッチンペーパー",
+
+ 
+
+    // 洗濯
+
+    al_lau_h1: "洗濯乾燥機", al_lau_h2: "洗濯用洗剤",
+
+    al_lau_n1: "物干しスタンド・ハンガー", al_lau_n2: "アイロン・アイロン台", al_lau_n3: "柔軟剤",
+
+ 
+
+    // リビング
+
+    al_liv_h1: "エアコン", al_liv_h2: "65インチスマートTV", al_liv_h3: "高速Wi-Fi",
+
+    al_liv_h4: "ソファ", al_liv_h5: "ローテーブル", al_liv_h6: "ゴミ箱",
+
+    al_liv_h7: "USB付延長コード", al_liv_h8: "ティッシュ", al_liv_h9: "卓上ミラー",
+
+    al_liv_n1: "空気清浄機", al_liv_n2: "加湿器", al_liv_n3: "ヒーター・ストーブ",
+
+    al_liv_n4: "サーキュレーター", al_liv_n5: "ウェットティッシュ",
+
+ 
+
+    // 安全
+
+    al_sec_h1: "オートロック（共用部）", al_sec_h2: "火災報知器",
+
+    al_sec_h3: "監視カメラ（玄関ドア上部）", al_sec_h4: "非常用照明",
+
+    al_sec_n1: "救急箱",
+
+ 
+
+    // その他
+
+    al_oth_h1: "ウォシュレット付トイレ", al_oth_h2: "粘着クリーナー（コロコロ）", al_oth_h3: "ゴミ袋",
+
+    al_oth_h4: "サニタリー袋", al_oth_h5: "便器ブラシ", al_oth_h6: "観光ガイド",
+
+    al_oth_h7: "ハウスマニュアル", al_oth_h8: "折畳式踏台", al_oth_h9: "トイレ消臭剤",
+
+    al_oth_n1: "掃除機", al_oth_n2: "傘・傘立て", al_oth_n3: "Bluetoothスピーカー",
+
+    al_oth_n4: "HDMIケーブル・LANケーブル", al_oth_n5: "スマホ充電ケーブル", al_oth_n6: "ゲーム機",
+
+    al_oth_n7: "ベビー用品", al_oth_n8: "デスク", al_oth_n9: "文具",
+
+    al_oth_n10: "衣類用消臭スプレー", al_oth_n11: "体重計",
+
  
 
     tl_title: "アメニティ・設備一覧",

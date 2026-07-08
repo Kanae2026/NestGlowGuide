@@ -630,6 +630,91 @@ window.translations.ko = {
 
     p_lost_item4: "비품 파손・분실: 파손이나 분실 발견 시 실비 상당액을 청구합니다. 퇴실 전 메시지로 알려주세요.",
 
+
+    al_title: "민박 어메니티・설비 목록",
+
+    al_have: "있음", al_none: "없음",
+
+    al_cat_bed: "침실・침구", al_cat_bath: "욕실・어메니티",
+
+    al_cat_kitchen: "주방・다이닝", al_cat_laundry: "세탁",
+
+    al_cat_living: "거실・설비", al_cat_security: "안전・보안",
+
+    al_cat_other: "기타・서비스",
+
+ 
+
+    al_bed_h1: "침구", al_bed_h2: "옷장", al_bed_h3: "옷걸이",
+
+    al_bed_n1: "잠옷／유카타", al_bed_n2: "여분 이불 세트", al_bed_n3: "안대・귀마개",
+
+ 
+
+    al_bath_h1: "샴푸류", al_bath_h2: "수건", al_bath_h3: "욕실 매트",
+
+    al_bath_h4: "일회용 칫솔(1개/인)", al_bath_h5: "슬리퍼(1켤레/인)", al_bath_h6: "드라이어",
+
+    al_bath_h7: "헤어 아이론", al_bath_h8: "미용 롤러", al_bath_h9: "목욕 의자",
+
+    al_bath_n1: "스킨・헤어케어류", al_bath_n2: "면도기", al_bath_n3: "면봉",
+
+    al_bath_n4: "세면대야", al_bath_n5: "제균 시트", al_bath_n6: "욕실 건조기", al_bath_n7: "입욕제",
+
+ 
+
+    al_kit_h1: "냉장고", al_kit_h2: "전자레인지", al_kit_h3: "전기포트",
+
+    al_kit_h4: "IH 인덕션", al_kit_h5: "전기밥솥", al_kit_h6: "주방세제",
+
+    al_kit_h7: "수세미", al_kit_h8: "식기・커틀러리", al_kit_h9: "조리도구", al_kit_h10: "식기 건조대",
+
+    al_kit_n1: "랩・호일", al_kit_n2: "조미료", al_kit_n3: "정수기",
+
+    al_kit_n4: "커피・티백", al_kit_n5: "생수(페트병)", al_kit_n6: "토스터", al_kit_n7: "키친타월",
+
+ 
+
+    al_lau_h1: "세탁 건조기", al_lau_h2: "세탁 세제",
+
+    al_lau_n1: "빨래 건조대・옷걸이", al_lau_n2: "다리미・다리미판", al_lau_n3: "섬유유연제",
+
+ 
+
+    al_liv_h1: "에어컨", al_liv_h2: "65인치 스마트 TV", al_liv_h3: "고속 Wi-Fi",
+
+    al_liv_h4: "소파", al_liv_h5: "로테이블", al_liv_h6: "쓰레기통",
+
+    al_liv_h7: "USB 멀티탭", al_liv_h8: "티슈", al_liv_h9: "탁상 거울",
+
+    al_liv_n1: "공기청정기", al_liv_n2: "가습기", al_liv_n3: "히터・난로",
+
+    al_liv_n4: "서큘레이터", al_liv_n5: "물티슈",
+
+ 
+
+    al_sec_h1: "오토록(공용부)", al_sec_h2: "화재경보기",
+
+    al_sec_h3: "CCTV(현관문 상단)", al_sec_h4: "비상등",
+
+    al_sec_n1: "구급상자",
+
+ 
+
+    al_oth_h1: "비데 화장실", al_oth_h2: "점착 클리너(돌돌이)", al_oth_h3: "쓰레기 봉투",
+
+    al_oth_h4: "위생 봉투", al_oth_h5: "변기 솔", al_oth_h6: "관광 가이드",
+
+    al_oth_h7: "하우스 매뉴얼", al_oth_h8: "접이식 발판", al_oth_h9: "화장실 탈취제",
+
+    al_oth_n1: "청소기", al_oth_n2: "우산・우산꽂이", al_oth_n3: "블루투스 스피커",
+
+    al_oth_n4: "HDMI・LAN 케이블", al_oth_n5: "휴대폰 충전 케이블", al_oth_n6: "게임기",
+
+    al_oth_n7: "유아용품", al_oth_n8: "책상", al_oth_n9: "문구류",
+
+    al_oth_n10: "의류 탈취 스프레이", al_oth_n11: "체중계",
+
  
 
     tl_title: "아메니티・설비 목록",

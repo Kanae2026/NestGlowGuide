@@ -630,6 +630,91 @@ window.translations.zh = {
 
     p_lost_item4: "设施损坏/物品丢失： 若发现损坏或丢失，将索赔实际维修或更换费用。请离店前发消息告知。",
 
+
+     al_title: "民宿设备・用品一览",
+
+    al_have: "有", al_none: "无",
+
+    al_cat_bed: "卧室・寝具", al_cat_bath: "浴室・洗漱用品",
+
+    al_cat_kitchen: "厨房・餐厅", al_cat_laundry: "洗衣",
+
+    al_cat_living: "客厅・设备", al_cat_security: "安全・防护",
+
+    al_cat_other: "其他・服务",
+
+ 
+
+    al_bed_h1: "寝具", al_bed_h2: "衣柜", al_bed_h3: "衣架",
+
+    al_bed_n1: "睡衣／浴衣", al_bed_n2: "备用被褥套装", al_bed_n3: "眼罩・耳塞",
+
+ 
+
+    al_bath_h1: "洗发水等", al_bath_h2: "毛巾", al_bath_h3: "浴室地垫",
+
+    al_bath_h4: "一次性牙刷（1支/人）", al_bath_h5: "拖鞋（1双/人）", al_bath_h6: "吹风机",
+
+    al_bath_h7: "卷发棒", al_bath_h8: "美容滚轮", al_bath_h9: "洗澡凳",
+
+    al_bath_n1: "护肤・护发用品", al_bath_n2: "剃须刀", al_bath_n3: "棉签",
+
+    al_bath_n4: "洗脸盆", al_bath_n5: "消毒湿巾", al_bath_n6: "浴室干燥机", al_bath_n7: "沐浴剂",
+
+ 
+
+    al_kit_h1: "冰箱", al_kit_h2: "微波炉", al_kit_h3: "电热水壶",
+
+    al_kit_h4: "IH电磁炉", al_kit_h5: "电饭煲", al_kit_h6: "洗洁精",
+
+    al_kit_h7: "海绵", al_kit_h8: "餐具・刀叉", al_kit_h9: "烹饪器具", al_kit_h10: "沥水架",
+
+    al_kit_n1: "保鲜膜・铝箔纸", al_kit_n2: "调味料", al_kit_n3: "净水器",
+
+    al_kit_n4: "咖啡・茶包", al_kit_n5: "瓶装水", al_kit_n6: "烤面包机", al_kit_n7: "厨房纸巾",
+
+ 
+
+    al_lau_h1: "洗衣烘干机", al_lau_h2: "洗衣液",
+
+    al_lau_n1: "晾衣架", al_lau_n2: "熨斗・熨衣板", al_lau_n3: "柔顺剂",
+
+ 
+
+    al_liv_h1: "空调", al_liv_h2: "65英寸智能电视", al_liv_h3: "高速Wi-Fi",
+
+    al_liv_h4: "沙发", al_liv_h5: "茶几", al_liv_h6: "垃圾桶",
+
+    al_liv_h7: "带USB插排", al_liv_h8: "纸巾", al_liv_h9: "桌面化妆镜",
+
+    al_liv_n1: "空气净化器", al_liv_n2: "加湿器", al_liv_n3: "暖气・取暖器",
+
+    al_liv_n4: "空气循环扇", al_liv_n5: "湿纸巾",
+
+ 
+
+    al_sec_h1: "自动门锁（公共区域）", al_sec_h2: "火灾报警器",
+
+    al_sec_h3: "监控摄像头（门口上方）", al_sec_h4: "应急照明",
+
+    al_sec_n1: "急救箱",
+
+ 
+
+    al_oth_h1: "带温水冲洗马桶", al_oth_h2: "粘毛滚筒", al_oth_h3: "垃圾袋",
+
+    al_oth_h4: "卫生袋", al_oth_h5: "马桶刷", al_oth_h6: "观光指南",
+
+    al_oth_h7: "房屋指南", al_oth_h8: "折叠踏凳", al_oth_h9: "厕所除臭剂",
+
+    al_oth_n1: "吸尘器", al_oth_n2: "雨伞・伞架", al_oth_n3: "蓝牙音箱",
+
+    al_oth_n4: "HDMI・网线", al_oth_n5: "手机充电线", al_oth_n6: "游戏机",
+
+    al_oth_n7: "婴儿用品", al_oth_n8: "书桌", al_oth_n9: "文具",
+
+    al_oth_n10: "衣物除臭喷雾", al_oth_n11: "体重秤",
+
  
 
     tl_title: "物品与设备一览",

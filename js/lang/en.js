@@ -630,6 +630,91 @@ window.translations.en = {
 
     p_lost_item4: "Damage/Loss: Actual repair/replacement cost will be charged. Please notify us via message before departure.",
 
+
+    al_title: "Amenities & Facilities List",
+
+    al_have: "Available", al_none: "Not Available",
+
+    al_cat_bed: "Bedroom & Bedding", al_cat_bath: "Bathroom & Amenities",
+
+    al_cat_kitchen: "Kitchen & Dining", al_cat_laundry: "Laundry",
+
+    al_cat_living: "Living & Facilities", al_cat_security: "Safety & Security",
+
+    al_cat_other: "Others & Services",
+
+ 
+
+    al_bed_h1: "Bedding", al_bed_h2: "Closet", al_bed_h3: "Hangers",
+
+    al_bed_n1: "Pajamas / Yukata", al_bed_n2: "Extra Futon Set", al_bed_n3: "Eye Mask / Earplugs",
+
+ 
+
+    al_bath_h1: "Shampoo, etc.", al_bath_h2: "Towels", al_bath_h3: "Bath Mat",
+
+    al_bath_h4: "Disposable Toothbrush (1/person)", al_bath_h5: "Slippers (1 pair/person)", al_bath_h6: "Hair Dryer",
+
+    al_bath_h7: "Hair Iron", al_bath_h8: "Facial Roller", al_bath_h9: "Bath Chair",
+
+    al_bath_n1: "Skin / Hair Care", al_bath_n2: "Razor", al_bath_n3: "Cotton Swabs",
+
+    al_bath_n4: "Wash Basin", al_bath_n5: "Sanitizing Wipes", al_bath_n6: "Bathroom Dryer", al_bath_n7: "Bath Salts",
+
+ 
+
+    al_kit_h1: "Refrigerator", al_kit_h2: "Microwave", al_kit_h3: "Electric Kettle",
+
+    al_kit_h4: "IH Cooktop", al_kit_h5: "Rice Cooker", al_kit_h6: "Dish Soap",
+
+    al_kit_h7: "Sponge", al_kit_h8: "Dishes & Cutlery", al_kit_h9: "Cookware", al_kit_h10: "Dish Rack",
+
+    al_kit_n1: "Plastic Wrap / Foil", al_kit_n2: "Seasonings", al_kit_n3: "Water Purifier",
+
+    al_kit_n4: "Coffee / Tea Bags", al_kit_n5: "Bottled Water", al_kit_n6: "Toaster", al_kit_n7: "Paper Towels",
+
+ 
+
+    al_lau_h1: "Washer/Dryer", al_lau_h2: "Laundry Detergent",
+
+    al_lau_n1: "Drying Rack / Hangers", al_lau_n2: "Iron & Ironing Board", al_lau_n3: "Fabric Softener",
+
+ 
+
+    al_liv_h1: "Air Conditioner", al_liv_h2: "65\" Smart TV", al_liv_h3: "High-Speed Wi-Fi",
+
+    al_liv_h4: "Sofa", al_liv_h5: "Coffee Table", al_liv_h6: "Trash Can",
+
+    al_liv_h7: "Extension Cord w/ USB", al_liv_h8: "Tissues", al_liv_h9: "Tabletop Mirror",
+
+    al_liv_n1: "Air Purifier", al_liv_n2: "Humidifier", al_liv_n3: "Heater",
+
+    al_liv_n4: "Circulator Fan", al_liv_n5: "Wet Wipes",
+
+ 
+
+    al_sec_h1: "Auto-Lock (Common Area)", al_sec_h2: "Fire Alarm",
+
+    al_sec_h3: "Security Camera (above entrance)", al_sec_h4: "Emergency Lighting",
+
+    al_sec_n1: "First-Aid Kit",
+
+ 
+
+    al_oth_h1: "Bidet Toilet", al_oth_h2: "Lint Roller", al_oth_h3: "Trash Bags",
+
+    al_oth_h4: "Sanitary Bags", al_oth_h5: "Toilet Brush", al_oth_h6: "Tourist Guide",
+
+    al_oth_h7: "House Manual", al_oth_h8: "Folding Step Stool", al_oth_h9: "Toilet Deodorizer",
+
+    al_oth_n1: "Vacuum Cleaner", al_oth_n2: "Umbrella / Stand", al_oth_n3: "Bluetooth Speaker",
+
+    al_oth_n4: "HDMI / LAN Cable", al_oth_n5: "Phone Charging Cable", al_oth_n6: "Game Console",
+
+    al_oth_n7: "Baby Items", al_oth_n8: "Desk", al_oth_n9: "Stationery",
+
+    al_oth_n10: "Clothing Deodorant Spray", al_oth_n11: "Body Scale",
+
  
 
     tl_title: "Amenities & Facilities List",
