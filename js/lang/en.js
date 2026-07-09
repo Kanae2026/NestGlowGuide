@@ -20,7 +20,7 @@ window.translations.en = {
 
     wifi_security_label: "Security",
 
-    room_name_value: "Nest Glow Gradito Yoshizuka Ekihigashi Room 302",
+    room_name_value: "Nest Glow Room 302",
 
     room_addr_value: "6-1-11 Yoshizuka, Hakata-ku, Fukuoka-shi, Fukuoka, 812-0041",
 

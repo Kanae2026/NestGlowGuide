@@ -20,7 +20,7 @@ window.translations.ko = {
 
     wifi_security_label: "암호화 방식",
 
-    room_name_value: "Nest Glow 그라디토 요시즈카에키히가시 302호실",
+    room_name_value: "Nest Glow 302호실",
 
     room_addr_value: "〒812-0041 후쿠오카현 후쿠오카시 하카타구 요시즈카 6초메 1-11",
 

@@ -20,7 +20,7 @@ window.translations.zh = {
 
     wifi_security_label: "加密方式",
 
-    room_name_value: "Nest Glow Gradito吉塚站东 302号室",
+    room_name_value: "Nest Glow 302号室",
 
     room_addr_value: "邮编812-0041 福冈县福冈市博多区吉塚６丁目１−１１",
 

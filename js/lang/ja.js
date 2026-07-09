@@ -20,9 +20,9 @@ window.translations.ja = {
 
     wifi_security_label: "暗号化方式",
 
-    room_name_value: "Nest Glow グラディート吉塚駅東 302号室",
+    room_name_value: "Nest Glow 302号室",
 
-    room_addr_value: "〒812-0041 福岡県福岡市博多区吉塚６丁目１−１１",
+    room_addr_value: "〒812-0041 福岡県福岡市博多区吉塚６丁目１−１１(グラディート吉塚駅東)",
 
     trouble_title: "接続できない場合",
 
