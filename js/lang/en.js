@@ -85,14 +85,15 @@ window.translations.en = {
     luggage_desc_co: "[After Check-out] Luggage storage is not available. Please use station coin lockers.",
 
     penalty_title: "⚠️ Regulations & Fines",
-
-    p1: "NO SMOKING on the premises. 10,000 JPY fine if evidence is found.",
-
-    p4: "No suitcase disposal. 10,000 JPY fine per item left behind.",
-
-    p5: "Lost keys or Wi-Fi will incur a 50,000 JPY fine each.",
-
-    p6: "5,000 JPY fine per night for unreported guests.",
+p_intro: "In the event of damage caused by intentional acts, negligence, or violation of the rules, we will charge the following fixed penalty fees plus actual costs.",
+    p1: "1. Smoking anywhere (including e-cigarettes & balconies): 100,000 JPY penalty + actual costs for deep cleaning & loss of business.",
+    p2: "2. Unauthorized guests / Exceeding capacity: Penalty of double the base rate per extra person/night + immediate eviction (reported to police if malicious).",
+    p3: "3. Damage, stains, or severe odors (vomit, blood, perfume, etc.): 30,000 JPY penalty + actual costs for deep cleaning & replacement.",
+    p4: "4. Unauthorized pets: 50,000 JPY penalty + actual costs for special cleaning.",
+    p5: "5. Unauthorized parties / events (noise issues): 50,000 JPY penalty + immediate eviction.",
+    p6: "6. Improper trash disposal: 30,000 JPY penalty + actual disposal costs.",
+    p7: "7. Suitcase disposal: 10,000 JPY disposal fee per item left behind.",
+    p8: "8. Lost keys or pocket Wi-Fi: 50,000 JPY replacement fee each.",
 
  
 
