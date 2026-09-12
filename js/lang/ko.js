@@ -42,7 +42,7 @@ window.translations.ko = {
 
     ci_link_text: "여기에서 숙박객 명부 작성하기",
 
-    ci_step2_title: "오시는 길 (객실까지의 안내)",
+    ci_step2_title: "역에서 키박스 및 입실까지의 안내",
 
     ci_step2_desc: "객실까지 오시는 방법은 '오시는 길' 페이지의 '역에서의 상세 경로 안내'를 확인해 주십시오.",
 
