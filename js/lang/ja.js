@@ -46,7 +46,7 @@ window.translations.ja = {
 
     ci_step2_desc: "お部屋までの行き方は、アクセスページの「駅からの詳細ルート案内」をご確認ください。",
 
-    ci_access_link: "駅からのルート案内はこちら",
+    ci_access_link: "駅→キーボックス→入室までのご案内",
 
     ci_keybox_notice: "※キーボックスの暗証番号は、宿泊者名簿ご回答後に個別にご案内いたします。",
 
