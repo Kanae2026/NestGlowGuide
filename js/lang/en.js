@@ -42,7 +42,7 @@ window.translations.en = {
 
     ci_link_text: "Guest Registration Form",
 
-    ci_step2_title: "Access (Getting to Your Room)",
+    ci_step2_title: "Directions from the station to the keybox and room entry",
 
     ci_step2_desc: "For directions to your room, please check the \"Route Guide from the Station\" on the Access page.",
 
